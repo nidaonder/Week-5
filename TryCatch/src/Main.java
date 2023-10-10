@@ -17,7 +17,7 @@ public class Main {
             print(arrayList);
 
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println(e.getCause());
+            System.out.println(e.getMessage());
 
         } finally {
             System.out.println("Program tamamlandı!");
