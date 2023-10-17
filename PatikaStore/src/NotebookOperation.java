@@ -66,6 +66,8 @@ public class NotebookOperation {
             }
         }
     }
+
+    // Print the Notebooklist to the screen.
     void printNotebookList(){
         System.out.println("NOTEBOOK LISTESI");
         System.out.println("----------------------------------------------------------------------------------------------");
@@ -81,6 +83,7 @@ public class NotebookOperation {
     }
 
 
+    // Add product to list.
     void addNotebookList(){
         System.out.println();
         System.out.println("Notebook ekleme paneline hosgeldiniz! Eklemek istediginiz urunun; ");
@@ -109,6 +112,7 @@ public class NotebookOperation {
         printNotebookList();
     }
 
+    // Delete product from list.
     void deleteNotebook() {
         System.out.print("Urun silme paneline hosgeldiniz! Silmek istediginiz urunun ID No'sunu giriniz: ");
         int removeID = input.nextInt();
@@ -122,6 +126,8 @@ public class NotebookOperation {
             }
         }
     }
+
+    // Filter by id number
      void filterNotebooksById(){
          printNotebookList();
          System.out.println("Filtrelemek istediginiz urunun ID No'sunu giriniz: ");
@@ -129,6 +135,8 @@ public class NotebookOperation {
          System.out.println(filterID + " id numarali notebook = " + notebookList.get(filterID-1).getProductName()); // IndexOutOfBound almamamak icin filterID-1.
      }
 
+
+     // Filter by brand
      void filterNotebooksByBrand(){
          printNotebookList();
          System.out.print("Filtrelemek istediginiz urunun markasini giriniz: ");

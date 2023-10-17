@@ -71,6 +71,8 @@ public class SmartPhoneOperation {
             }
         }
     }
+
+    // Print the SmartphoneList to the screen.
     void printSmartPhoneList(){
         System.out.println("TELEFON LISTESI");
         System.out.println("----------------------------------------------------------------------------------------------------------------------");
@@ -85,6 +87,7 @@ public class SmartPhoneOperation {
         System.out.println("----------------------------------------------------------------------------------------------------------------------");
     }
 
+    // Add product to list.
     void addSmartPhoneList(){
         System.out.println();
         System.out.println("Telefon ekleme paneline hosgeldiniz! Eklemek istediginiz urunun; ");
@@ -117,6 +120,8 @@ public class SmartPhoneOperation {
         printSmartPhoneList();
 
     }
+
+    // Delete product from list.
     void deleteSmartPhone(){
 
         System.out.print("Urun silme paneline hosgeldiniz! Silmek istediginiz urunun ID No'sunu giriniz: ");
@@ -146,6 +151,7 @@ public class SmartPhoneOperation {
         printSmartPhoneList(); */
     }
 
+    // Filter by id number
     void filterSmartphonesById(){
         printSmartPhoneList();
         System.out.println("Filtrelemek istediginiz urunun ID No'sunu giriniz: ");
@@ -153,6 +159,7 @@ public class SmartPhoneOperation {
         System.out.println(filterID + " id numarali telefon = " + smartPhoneList.get(filterID-1).getProductName()); // IndexOutOfBound almamamak icin filterID-1.
     }
 
+    // Filter by brand
     void filterSmartphonesByBrand(){
         printSmartPhoneList();
         System.out.print("Filtrelemek istediginiz urunun markasini giriniz: ");
