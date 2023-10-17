@@ -4,12 +4,13 @@ public class Product {
     private double rateOfDiscount;
     private int amountOfStock;
     private String productName;
-    private Brand brand;
-    private int screenSize;
+    private String brand;
+    private double screenSize;
     private int ram;
 
-    public Product (int idNo, double price, double rateOfDiscount, int amountOfStock, String productName, Brand brand, int screenSize, int ram){
+    public Product (int idNo, double price, double rateOfDiscount, int amountOfStock, String productName, String brand, double screenSize, int ram){
         this.idNo = idNo;
+        this.price = price;
         this.rateOfDiscount = rateOfDiscount;
         this.amountOfStock = amountOfStock;
         this.productName = productName;
@@ -59,19 +60,19 @@ public class Product {
         this.productName = productName;
     }
 
-    public Brand getBrand() {
+    public String getBrand() {
         return brand;
     }
 
-    public void setBrand(Brand brand) {
+    public void setBrand(String brand) {
         this.brand = brand;
     }
 
-    public int getScreenSize() {
+    public double getScreenSize() {
         return screenSize;
     }
 
-    public void setScreenSize(int screenSize) {
+    public void setScreenSize(double screenSize) {
         this.screenSize = screenSize;
     }
 

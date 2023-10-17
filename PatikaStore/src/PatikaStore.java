@@ -13,31 +13,33 @@ public class PatikaStore {
         while (flag){
             System.out.println("PATIKA STORE URUN YONETIM PANELI !");
             System.out.println("===================================");
-            System.out.print("Yapmak istediginiz islemi seciniz; " +
+            System.out.println("Yapmak istediginiz islemi seciniz: " +
+                    "\n " +
                     "\n1-Notebook Islemleri." +
                     "\n2-Cep Telefonu Islemleri." +
                     "\n3-Marka Listele." +
-                    "\n0-Cikis Yap.");
+                    "\n0-Cikis Yap." +
+                    "\n ");
+            System.out.print("Seciminiz : ");
             int selectMenu = input.nextInt();
             switch (selectMenu){
                 case 0:
                     flag = false;
                     break;
                 case 1:
-                    notebookOperation.run();
+                    notebookOperation.notebookMenu();
                     break;
                 case 2:
-                    smartPhoneOperation.run();
+                    smartPhoneOperation.smartPhoneMenu();
                     break;
                 case 3:
-                    System.out.println();
                     Brand.printBrand();
-                    System.out.println();
                     break;
                 default:
                     System.out.println("---- Lutfen gecerli bir secenek giriniz! ----");
                     break;
             }
+
         }
     }
 }

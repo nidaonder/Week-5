@@ -37,9 +37,11 @@ public class Brand implements Comparable<Brand>{
         this.name = name;
     }
     static void printBrand(){
+        System.out.println();
         for (Brand brand : brandTreeSet){
             System.out.println(brand);
         }
+        System.out.println();
     }
 
     @Override
